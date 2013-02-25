@@ -1,0 +1,2 @@
+#!/bin/bash
+landslide readme.md -l no -r -t theme -d index.html
