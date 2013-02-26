@@ -56,6 +56,8 @@
             <header><h1>JavaScript? Testing?</h1></header>
             
             
+            <section><p><img src="images/smiley_confused.png" alt="JavaScript? Testing?"/></p></section>
+            
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
@@ -70,7 +72,7 @@
             </aside>
             
             <aside class="page_number">
-              1/3
+              1/15
             </aside>
           </footer>
         </div>
@@ -81,17 +83,14 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h2>What we'll learn</h2></header>
+            <header><h2>Who?</h2></header>
             
             
-            <section><ul>
-<li>Syntax</li>
-<li>First class properties</li>
-<li>Context</li>
-<li>Arguments</li>
-<li>Scope</li>
-</ul>
-<p><img style="float: right;" src="images/learn.png" /></p></section>
+            <section><h3>David Luecke</h3>
+<p>@daffl
+github.com/daffl</p>
+<p><a href="">Bitovi Logo</a></p>
+<p><a href="http://bitovi.github.com/jqueryto">http://bitovi.github.com/jqueryto</a></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -107,7 +106,7 @@
             </aside>
             
             <aside class="page_number">
-              2/3
+              2/15
             </aside>
           </footer>
         </div>
@@ -115,27 +114,11 @@
       
       <!-- slide source: readme.md -->
       <div class="slide-wrapper">
-        <div class="slide has_code">
+        <div class="slide">
           <div class="inner">
             
-            <header><h2>Ways to Declare a Function</h2></header>
             
-            
-            <section><div class="highlight"><pre><span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;hi&quot;</span><span class="p">)}</span>
-
-<span class="kd">function</span> <span class="nx">f</span><span class="p">(){</span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;hi&quot;</span><span class="p">)}</span>
-
-<span class="nb">window</span><span class="p">.</span><span class="nx">f</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;hi&quot;</span><span class="p">)}</span>
-
-<span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="nx">f</span><span class="o">:</span> <span class="kd">function</span><span class="p">(){</span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;hi&quot;</span><span class="p">)}</span>
-<span class="p">}</span>
-</pre></div>
-
-<p>Possible but <strong>bad</strong>:</p>
-<div class="highlight"><pre><span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="s2">&quot;alert(&#39;hi&#39;)&quot;</span><span class="p">);</span>
-</pre></div>
-</section>
+            <section><p>Open source projects</p></section>
             
           </div>
           <div class="presenter_notes">
@@ -151,7 +134,403 @@
             </aside>
             
             <aside class="page_number">
-              3/3
+              3/15
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: readme.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h2>The state of JavaScript testing</h2></header>
+            
+            
+            <section><p><img src="images/smiley_unhappy.png" alt="JavaScript testing smiley is not happy" style="float:right; margin-top: 5em;" /></p>
+<p><a href="http://dailyjs.com/2012/12/24/javascript-survey-results/">DailyJS survey</a> from December 2012:</p>
+<ul>
+<li>51% don't test</li>
+<li>Most commonly used frameworks<ul>
+<li>Jasmine</li>
+<li>Mocha</li>
+<li>QUnit</li>
+</ul>
+</li>
+</ul>
+<p>.notes: More important as applications get bigger
+        JavaScript testing smiley is not happy (yet)
+        We as a community should work on making this easier</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="readme.md">readme.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              4/15
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: readme.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h2>What can we do to make it better?</h2></header>
+            
+            
+            <section><ul>
+<li>Simplified tools</li>
+<li>Education</li>
+<li>Automation</li>
+</ul>
+<p>.notes: If there is no solution to automate yet, because developers are inherently lazy there are two
+options: Still do it manually or develop a solution.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="readme.md">readme.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              5/15
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: readme.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_notes">
+          <div class="inner">
+            
+            <header><h2>A Holy Grail?</h2></header>
+            
+            
+            <section><p class="notes">What can we do to make this more accepted</p>
+<h3><a href="">Adam Hawkins</a> at <a href="https://speakerdeck.com/twinturbo/javascript-testing-the-holy-grail">RejectJS 2012</a> (<a href="http://www.youtube.com/watch?v=YdFQ29oK50M">watch</a>)</h3>
+<ul>
+<li>Browser independent</li>
+<li>All tests written in JavaScript</li>
+<li>Unit and functional testing</li>
+<li>Test against a single browser in development</li>
+<li>Test against all target browsers in CI</li>
+<li>Runs from the CLI</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="readme.md">readme.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              6/15
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: readme.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_notes">
+          <div class="inner">
+            
+            
+            <section><p class="notes">Tell you what: These guys can feel our pain</p>
+<p>Monty Python!</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="readme.md">readme.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              7/15
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: readme.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_notes">
+          <div class="inner">
+            
+            <header><h2>The Secret?</h2></header>
+            
+            
+            <section><p>Software development will never be easy!</p>
+<ul>
+<li>Break things down into smaller pieces</li>
+<li>Find the best possible solution</li>
+<li>Use it to build something awesome</li>
+</ul>
+<p class="notes">Things will get complicated by itself</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="readme.md">readme.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              8/15
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: readme.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h2>What is a test anyway?</h2></header>
+            
+            
+            <section><p>For a given input we expect the following result(s)</p>
+<ul>
+<li>Unit testing</li>
+<li>Functional (integration) testing</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="readme.md">readme.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              9/15
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: readme.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Test reporting</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="readme.md">readme.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              10/15
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: readme.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h2>Testee.js</h2></header>
+            
+            
+            <section><ul>
+<li>Runs on all browsers</li>
+<li>Many output formats</li>
+<li>Easy CI integration (Mocha style)</li>
+<li>BrowserStack support</li>
+<li>Code coverage</li>
+<li>GruntJS task</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="readme.md">readme.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              11/15
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: readme.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h2>Functional Testing</h2></header>
+            
+            
+            <section><p>Also integration tests</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="readme.md">readme.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              12/15
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: readme.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h2>FuncUnit</h2></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="readme.md">readme.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              13/15
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: readme.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h2>Making things testable</h2></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="readme.md">readme.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              14/15
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: readme.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h2>When to do what?</h2></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="readme.md">readme.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              15/15
             </aside>
           </footer>
         </div>
@@ -172,13 +551,82 @@
       
         
         <tr id="toc-row-2" class="sub">
-          <th><a href="#slide2">What we'll learn</a></th>
+          <th><a href="#slide2">Who?</a></th>
           <td><a href="#slide2">2</a></td>
         </tr>
         
-        <tr id="toc-row-3" class="sub">
-          <th><a href="#slide3">Ways to Declare a Function</a></th>
-          <td><a href="#slide3">3</a></td>
+      
+      
+      <tr id="toc-row-3">
+        <th><a href="#slide3">-</a></th>
+        <td><a href="#slide3">3</a></td>
+      </tr>
+      
+        
+        <tr id="toc-row-4" class="sub">
+          <th><a href="#slide4">The state of JavaScript testing</a></th>
+          <td><a href="#slide4">4</a></td>
+        </tr>
+        
+        <tr id="toc-row-5" class="sub">
+          <th><a href="#slide5">What can we do to make it better?</a></th>
+          <td><a href="#slide5">5</a></td>
+        </tr>
+        
+        <tr id="toc-row-6" class="sub">
+          <th><a href="#slide6">A Holy Grail?</a></th>
+          <td><a href="#slide6">6</a></td>
+        </tr>
+        
+      
+      
+      <tr id="toc-row-7">
+        <th><a href="#slide7">-</a></th>
+        <td><a href="#slide7">7</a></td>
+      </tr>
+      
+        
+        <tr id="toc-row-8" class="sub">
+          <th><a href="#slide8">The Secret?</a></th>
+          <td><a href="#slide8">8</a></td>
+        </tr>
+        
+        <tr id="toc-row-9" class="sub">
+          <th><a href="#slide9">What is a test anyway?</a></th>
+          <td><a href="#slide9">9</a></td>
+        </tr>
+        
+      
+      
+      <tr id="toc-row-10">
+        <th><a href="#slide10">Test reporting</a></th>
+        <td><a href="#slide10">10</a></td>
+      </tr>
+      
+        
+        <tr id="toc-row-11" class="sub">
+          <th><a href="#slide11">Testee.js</a></th>
+          <td><a href="#slide11">11</a></td>
+        </tr>
+        
+        <tr id="toc-row-12" class="sub">
+          <th><a href="#slide12">Functional Testing</a></th>
+          <td><a href="#slide12">12</a></td>
+        </tr>
+        
+        <tr id="toc-row-13" class="sub">
+          <th><a href="#slide13">FuncUnit</a></th>
+          <td><a href="#slide13">13</a></td>
+        </tr>
+        
+        <tr id="toc-row-14" class="sub">
+          <th><a href="#slide14">Making things testable</a></th>
+          <td><a href="#slide14">14</a></td>
+        </tr>
+        
+        <tr id="toc-row-15" class="sub">
+          <th><a href="#slide15">When to do what?</a></th>
+          <td><a href="#slide15">15</a></td>
         </tr>
         
       

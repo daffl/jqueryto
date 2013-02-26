@@ -1,0 +1,80 @@
+2013-02-25T02:53:33.091Z - debug: Creating server with configuration token=__token, exitEvent=end, startEvent=start, adapterPath=__testee, adapters=testee.js, reporter=Spec, coverage=false, timeout=60, pathname=/Users/daff/Jupiter/talks/javascript-testing, path=/Users/daff/Jupiter/talks/javascript-testing, href=/Users/daff/Jupiter/talks/javascript-testing
+2013-02-25T02:53:33.095Z - debug: Running test with configuration:  launch=local, tunnel=local, browser=phantom, reporter=Spec, port=3996, verbose=true, log=./testee.log, timeout=60, coverage=false
+2013-02-25T02:53:34.799Z - debug: Launching http://localhost:3996/underscore/test/index.html?__token=ligbjd on local with: browser=phantom
+2013-02-25T02:53:34.831Z - debug: Registering token token=ligbjd
+2013-02-25T02:53:36.773Z - debug: Authorized token ligbjd
+2013-02-25T02:53:37.076Z - debug: got valid connection, firing the testing event. token=ligbjd
+2013-02-25T02:53:37.093Z - debug: Removing token ligbjd
+2013-02-25T02:53:38.425Z - debug: Stopped instance http://localhost:3996/underscore/test/index.html?__token=ligbjd
+2013-02-25T02:53:47.573Z - debug: Creating server with configuration token=__token, exitEvent=end, startEvent=start, adapterPath=__testee, adapters=testee.js, reporter=Spec, coverage=false, timeout=60, pathname=/Users/daff/Jupiter/talks/javascript-testing, path=/Users/daff/Jupiter/talks/javascript-testing, href=/Users/daff/Jupiter/talks/javascript-testing
+2013-02-25T02:53:47.577Z - debug: Running test with configuration:  launch=local, tunnel=local, browser=safari, reporter=Spec, port=3996, verbose=true, log=./testee.log, timeout=60, coverage=false
+2013-02-25T02:53:48.769Z - debug: Launching http://localhost:3996/underscore/test/index.html?__token=nlfn89 on local with: browser=safari
+2013-02-25T02:53:48.796Z - debug: Registering token token=nlfn89
+2013-02-25T02:53:52.633Z - debug: Authorized token nlfn89
+2013-02-25T02:53:52.748Z - debug: got valid connection, firing the testing event. token=nlfn89
+2013-02-25T02:53:52.777Z - debug: Removing token nlfn89
+2013-02-25T02:53:54.088Z - debug: Stopped instance http://localhost:3996/underscore/test/index.html?__token=nlfn89
+2013-02-25T02:54:14.629Z - debug: Creating server with configuration token=__token, exitEvent=end, startEvent=start, adapterPath=__testee, adapters=testee.js, reporter=Dot, coverage=false, timeout=60, pathname=/Users/daff/Jupiter/talks/javascript-testing, path=/Users/daff/Jupiter/talks/javascript-testing, href=/Users/daff/Jupiter/talks/javascript-testing
+2013-02-25T02:54:14.632Z - debug: Running test with configuration:  launch=local, tunnel=local, browser=canary, reporter=Dot, port=3996, verbose=true, log=./testee.log, timeout=60, coverage=false
+2013-02-25T02:54:15.859Z - debug: Launching http://localhost:3996/underscore/test/index.html?__token=f38q84 on local with: browser=canary
+2013-02-25T02:54:15.890Z - debug: Registering token token=f38q84
+2013-02-25T02:54:19.300Z - debug: Authorized token f38q84
+2013-02-25T02:54:20.268Z - debug: got valid connection, firing the testing event. token=f38q84
+2013-02-25T02:54:20.291Z - debug: Removing token f38q84
+2013-02-25T03:04:20.742Z - debug: Creating server with configuration token=__token, exitEvent=end, startEvent=start, adapterPath=__testee, adapters=testee.js, reporter=Spec, coverage=false, timeout=60, pathname=/Users/daff/Jupiter/talks/javascript-testing, path=/Users/daff/Jupiter/talks/javascript-testing, href=/Users/daff/Jupiter/talks/javascript-testing
+2013-02-25T03:04:20.746Z - debug: Running test with configuration:  type=browserstack, username=david@bitovi.com, password=browsergnom33, tunnel=localtunnel, browser=ie:9.0@win, reporter=Spec, port=3996, verbose=true, log=./testee.log, timeout=60, coverage=false
+2013-02-25T03:04:20.746Z - debug: Listening on port 3996
+2013-02-25T03:04:20.752Z - debug: Setting up tunnel: port=3996, tunnel=localtunnel
+2013-02-25T03:04:20.757Z - debug: Started localtunnel args=[-k, ~/.ssh/id_rsa.pub, 3996], pid=9066
+2013-02-25T03:04:24.686Z - debug: Tunnel is up at: http://4u38.localtunnel.com
+2013-02-25T03:04:25.519Z - debug: Launching http://4u38.localtunnel.com/underscore/test/index.html?__token=kccjic on browserstack with: browser=ie, version=9.0, os=win
+2013-02-25T03:04:26.025Z - debug: Registering token token=kccjic
+2013-02-25T03:04:45.695Z - debug: Authorized token kccjic
+2013-02-25T03:04:46.599Z - debug: got valid connection, firing the testing event. token=kccjic
+2013-02-25T03:04:59.055Z - debug: Removing token kccjic
+2013-02-25T03:05:10.049Z - debug: Stopped instance http://4u38.localtunnel.com/underscore/test/index.html?__token=kccjic
+2013-02-25T03:10:09.620Z - debug: Creating server with configuration token=__token, exitEvent=end, startEvent=start, adapterPath=__testee, adapters=testee.js, reporter=Spec, coverage=false, timeout=60, pathname=/Users/daff/Jupiter/talks/javascript-testing, path=/Users/daff/Jupiter/talks/javascript-testing, href=/Users/daff/Jupiter/talks/javascript-testing
+2013-02-25T03:10:09.625Z - debug: Running test with configuration:  type=browserstack, username=david@bitovi.com, password=lala, tunnel=localtunnel, browser=firefox:15.0@win, reporter=Spec, port=3996, verbose=true, log=./testee.log, timeout=60, coverage=false
+2013-02-25T03:10:09.625Z - debug: Listening on port 3996
+2013-02-25T03:10:09.633Z - debug: Setting up tunnel: port=3996, tunnel=localtunnel
+2013-02-25T03:10:09.637Z - debug: Started localtunnel args=[-k, ~/.ssh/id_rsa.pub, 3996], pid=9175
+2013-02-25T03:10:12.964Z - debug: Tunnel is up at: http://3ujc.localtunnel.com
+2013-02-25T03:10:33.155Z - debug: Creating server with configuration token=__token, exitEvent=end, startEvent=start, adapterPath=__testee, adapters=testee.js, reporter=Spec, coverage=false, timeout=60, pathname=/Users/daff/Jupiter/talks/javascript-testing, path=/Users/daff/Jupiter/talks/javascript-testing, href=/Users/daff/Jupiter/talks/javascript-testing
+2013-02-25T03:10:33.159Z - debug: Running test with configuration:  type=browserstack, username=david@bitovi.com, password=browsergnom33, tunnel=localtunnel, browser=firefox:15.0@win, reporter=Spec, port=3996, verbose=true, log=./testee.log, timeout=60, coverage=false
+2013-02-25T03:10:33.159Z - debug: Listening on port 3996
+2013-02-25T03:10:33.165Z - debug: Setting up tunnel: port=3996, tunnel=localtunnel
+2013-02-25T03:10:33.169Z - debug: Started localtunnel args=[-k, ~/.ssh/id_rsa.pub, 3996], pid=9177
+2013-02-25T03:10:36.295Z - debug: Tunnel is up at: http://4g4n.localtunnel.com
+2013-02-25T03:10:36.619Z - debug: Launching http://4g4n.localtunnel.com/underscore/test/index.html?__token=b3iidp on browserstack with: browser=firefox, version=15.0, os=win
+2013-02-25T03:10:36.998Z - debug: Registering token token=b3iidp
+2013-02-25T03:11:03.033Z - debug: Authorized token b3iidp
+2013-02-25T03:11:03.996Z - debug: got valid connection, firing the testing event. token=b3iidp
+2013-02-25T03:11:05.455Z - debug: Removing token b3iidp
+2013-02-25T03:11:10.850Z - debug: Stopped instance http://4g4n.localtunnel.com/underscore/test/index.html?__token=b3iidp
+2013-02-25T03:11:40.761Z - debug: Creating server with configuration token=__token, exitEvent=end, startEvent=start, adapterPath=__testee, adapters=testee.js, reporter=Spec, coverage=true, timeout=60, pathname=/Users/daff/Jupiter/talks/javascript-testing, path=/Users/daff/Jupiter/talks/javascript-testing, href=/Users/daff/Jupiter/talks/javascript-testing
+2013-02-25T03:11:40.764Z - debug: Running test with configuration:  launch=local, tunnel=local, browser=phantom, reporter=Spec, port=3996, verbose=true, log=./testee.log, timeout=60, coverage=true
+2013-02-25T03:11:42.060Z - debug: Launching http://localhost:3996/underscore/test/index.html?__token=5o52n2 on local with: browser=phantom
+2013-02-25T03:11:42.100Z - debug: Registering token token=5o52n2
+2013-02-25T03:11:47.856Z - debug: Authorized token 5o52n2
+2013-02-25T03:11:48.421Z - debug: got valid connection, firing the testing event. token=5o52n2
+2013-02-25T03:11:48.447Z - debug: Removing token 5o52n2
+2013-02-25T03:11:50.177Z - debug: Stopped instance http://localhost:3996/underscore/test/index.html?__token=5o52n2
+2013-02-25T06:05:31.488Z - debug: Creating server with configuration token=__token, exitEvent=end, startEvent=start, adapterPath=__testee, adapters=testee.js, reporter=Spec, coverage=true, timeout=60, pathname=/Users/daff/Jupiter/talks/javascript-testing, path=/Users/daff/Jupiter/talks/javascript-testing, href=/Users/daff/Jupiter/talks/javascript-testing
+2013-02-25T06:05:31.492Z - debug: Running test with configuration:  launch=local, tunnel=local, browser=canary, reporter=Spec, port=3996, verbose=true, log=./testee.log, timeout=60, coverage=true
+2013-02-25T06:05:34.274Z - debug: Launching http://localhost:3996/underscore/test/index.html?__token=e510mg on local with: browser=canary
+2013-02-25T06:05:34.310Z - debug: Registering token token=e510mg
+2013-02-25T06:05:48.715Z - debug: Creating server with configuration token=__token, exitEvent=end, startEvent=start, adapterPath=__testee, adapters=testee.js, reporter=Spec, coverage=true, timeout=60, pathname=/Users/daff/Jupiter/talks/javascript-testing, path=/Users/daff/Jupiter/talks/javascript-testing, href=/Users/daff/Jupiter/talks/javascript-testing
+2013-02-25T06:05:48.718Z - debug: Running test with configuration:  launch=local, tunnel=local, browser=canary, reporter=Spec, port=6775, verbose=true, log=./testee.log, timeout=60, coverage=true
+2013-02-25T06:05:49.893Z - debug: Launching http://localhost:6775/underscore/test/index.html?__token=nkhejo on local with: browser=canary
+2013-02-25T06:05:49.918Z - debug: Registering token token=nkhejo
+2013-02-25T06:05:55.995Z - debug: Authorized token nkhejo
+2013-02-25T06:05:57.295Z - debug: got valid connection, firing the testing event. token=nkhejo
+2013-02-25T06:05:57.320Z - debug: Removing token nkhejo
+2013-02-25T06:06:34.782Z - debug: Creating server with configuration token=__token, exitEvent=end, startEvent=start, adapterPath=__testee, adapters=testee.js, reporter=XUnit, coverage=true, timeout=60, pathname=/Users/daff/Jupiter/talks/javascript-testing, path=/Users/daff/Jupiter/talks/javascript-testing, href=/Users/daff/Jupiter/talks/javascript-testing
+2013-02-25T06:06:34.785Z - debug: Running test with configuration:  launch=local, tunnel=local, browser=canary, reporter=XUnit, port=6775, verbose=true, log=./testee.log, timeout=60, coverage=true
+2013-02-25T06:06:35.964Z - debug: Launching http://localhost:6775/underscore/test/index.html?__token=fnh3g9 on local with: browser=canary
+2013-02-25T06:06:35.991Z - debug: Registering token token=fnh3g9
+2013-02-25T06:06:49.195Z - debug: Authorized token fnh3g9
+2013-02-25T06:06:50.451Z - debug: got valid connection, firing the testing event. token=fnh3g9
+2013-02-25T06:06:50.474Z - debug: Removing token fnh3g9
+2013-02-25T06:06:52.208Z - debug: Stopped instance http://localhost:6775/underscore/test/index.html?__token=fnh3g9
