@@ -78,3 +78,26 @@
 2013-02-25T06:06:50.451Z - debug: got valid connection, firing the testing event. token=fnh3g9
 2013-02-25T06:06:50.474Z - debug: Removing token fnh3g9
 2013-02-25T06:06:52.208Z - debug: Stopped instance http://localhost:6775/underscore/test/index.html?__token=fnh3g9
+2013-02-26T23:33:26.584Z - debug: Creating server with configuration token=__token, exitEvent=end, startEvent=start, adapterPath=__testee, adapters=testee.js, reporter=Spec, coverage=false, timeout=60, protocol=http:, slashes=true, host=lodash.com, hostname=lodash.com, href=http://lodash.com/tests/index.html, pathname=/tests/index.html, path=/tests/index.html
+2013-02-26T23:33:26.588Z - debug: Running test with configuration:  launch=local, tunnel=local, browser=phantom, reporter=Spec, port=3996, verbose=true, log=./testee.log, timeout=60, coverage=false
+2013-02-26T23:33:28.453Z - debug: Launching http://localhost:3996/tests/index.html?__token=114k8j on local with: browser=phantom
+2013-02-26T23:33:28.502Z - debug: Registering token token=114k8j
+2013-02-26T23:33:31.242Z - debug: Authorized token 114k8j
+2013-02-26T23:33:31.351Z - debug: got valid connection, firing the testing event. token=114k8j
+2013-02-26T23:34:22.323Z - debug: Creating server with configuration token=__token, exitEvent=end, startEvent=start, adapterPath=__testee, adapters=testee.js, reporter=Spec, coverage=false, timeout=60, protocol=http:, slashes=true, host=lodash.com, hostname=lodash.com, href=http://lodash.com/tests/index.html, pathname=/tests/index.html, path=/tests/index.html
+2013-02-26T23:34:22.326Z - debug: Running test with configuration:  launch=local, tunnel=local, browser=firefox, reporter=Spec, port=3996, verbose=true, log=./testee.log, timeout=60, coverage=false
+2013-02-26T23:34:23.545Z - debug: Launching http://localhost:3996/tests/index.html?__token=mlh3ql on local with: browser=firefox
+2013-02-26T23:34:23.579Z - debug: Registering token token=mlh3ql
+2013-02-26T23:34:27.096Z - debug: Authorized token mlh3ql
+2013-02-26T23:34:27.110Z - debug: got valid connection, firing the testing event. token=mlh3ql
+2013-02-26T23:34:53.602Z - debug: Creating server with configuration token=__token, exitEvent=end, startEvent=start, adapterPath=__testee, adapters=testee.js, reporter=Spec, coverage=false, timeout=60, protocol=http:, slashes=true, host=lodash.com, hostname=lodash.com, href=http://lodash.com/tests/, pathname=/tests/, path=/tests/
+2013-02-26T23:34:53.605Z - debug: Running test with configuration:  launch=local, tunnel=local, browser=firefox, reporter=Spec, port=3996, verbose=true, log=./testee.log, timeout=60, coverage=false
+2013-02-26T23:34:54.813Z - debug: Launching http://localhost:3996/tests/?__token=h2ahln on local with: browser=firefox
+2013-02-26T23:35:01.550Z - debug: Creating server with configuration token=__token, exitEvent=end, startEvent=start, adapterPath=__testee, adapters=testee.js, reporter=Spec, coverage=false, timeout=60, protocol=http:, slashes=true, host=lodash.com, hostname=lodash.com, href=http://lodash.com/tests/, pathname=/tests/, path=/tests/
+2013-02-26T23:35:01.554Z - debug: Running test with configuration:  launch=local, tunnel=local, browser=firefox, reporter=Spec, port=3996, verbose=true, log=./testee.log, timeout=60, coverage=false
+2013-02-26T23:35:02.726Z - debug: Launching http://localhost:3996/tests/?__token=edn9hi on local with: browser=firefox
+2013-02-26T23:35:02.758Z - debug: Registering token token=edn9hi
+2013-02-26T23:35:07.525Z - debug: Authorized token edn9hi
+2013-02-26T23:35:07.533Z - debug: got valid connection, firing the testing event. token=edn9hi
+2013-02-26T23:35:38.095Z - debug: Authorized token edn9hi
+2013-02-26T23:35:38.202Z - debug: got valid connection, firing the testing event. token=edn9hi

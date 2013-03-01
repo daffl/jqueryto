@@ -1,0 +1,75 @@
+body {
+	font-size: 25px !important;
+}
+
+li img {
+	display: inline;
+}
+
+.inner header {
+	box-shadow: 0px 3px 4px #505050;
+	background-color: #222222;
+}
+
+.inner header h1 {
+	text-align: center;
+	display: block;
+	font-size: 75px;
+	margin: 20px 0;
+}
+
+.inner h3, .inner .large {
+	font-size: 50px;
+	vertical-align: middle;
+}
+
+#jasmine {
+	margin-top: 0.5em;
+	float: left;
+}
+
+#qunit {
+	margin-top: 3em;
+	margin-right: 1em;
+	float: right;
+}
+
+#mocha {
+	margin-top: 6em;
+	margin-left: 2em;
+}
+
+#holygrail {
+	height: 520px;
+	width: 100%;
+	border-radius: 8px;
+}
+
+.framework-stat {
+	color: #505050;
+	text-align: left;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.framework-stat img, .framework-stat a {
+	margin: 0;
+	vertical-align: middle;
+}
+
+header + section p:only-child {
+	margin-top: 6em;
+	text-align: center;
+}
+
+header + section p:only-child .large {
+	font-size: 200px;
+}
+
+body.expose div.slide {
+	opacity: 0.6;
+}
+
+body.expose div.slide:hover, body.expose div.slide.current {
+	opacity: 1;
+}
