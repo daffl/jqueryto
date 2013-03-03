@@ -15,7 +15,7 @@
 [github.com/daffl](https://github.com/daffl)
 
 <i class="icon-picture large"></i>
-[http://bitovi.github.com/jqueryto](http://bitovi.github.com/jqueryto)
+[http://daffl.github.com/jqueryto](http://daffl.github.com/jqueryto)
 
 ![Bitovi Logo](images/bitovi_logo_black.png)
 
@@ -23,8 +23,8 @@
 
 ## __Open Source__?
 
-<img src="images/jqueryplusplus_logo.png" alt="jQuery++ Logo" style="margin-bottom: 1em;" />
 <img src="images/canjs_logo.png" alt="CanJS Logo" />
+<img src="images/jqueryplusplus_logo.png" alt="jQuery++ Logo" style="margin-bottom: 1em;" />
 
 ---
 
@@ -69,13 +69,13 @@
 
 <img src="images/smiley_thinking.png" alt="JavaScript testing smiley is thinking" style="float: right; margin-top: 3em; margin-right: 2em;" />
 
-- Create tools that make things easier
+- Build and use tools that make testing easier
 	- [GruntJS](http://gruntjs.com/)
 	- [TravisCI](https://travis-ci.org)
 - Simplify workflows
 	- [Yeoman](http://yeoman.io/)
 - Talk about it!
-- Automate stuff
+- Automate as much as possible
 
 <!--
 	If there is no solution to automate yet, because developers are inherently lazy there are two
@@ -106,12 +106,15 @@
 
 ## So __how__ do we solve this?
 
-### There will always be a holy grail!
+### There will always be some holy grail!
+
+<i class="icon-trophy" style="float: right; font-size: 250px; margin-top: 100px;"></i>
 
 - Break things down into smaller pieces
-- Find the best possible solution
-- Evolve
-- Repeat
+- Try and find the best possible solution
+- Build something on top of it
+
+<smal>Also: There is no holy grail</small>
 
 <!--
 	In the bigger picture: Look at how things have evolved in recent time.
@@ -126,7 +129,7 @@
 
 ---
 
-## Starting Tests
+## __Starting__ Tests
 
 __Open the test page URL in the target browser(s)__
 
@@ -141,9 +144,13 @@ Automate with [Launchpad](https://github.com/ekryski/launchpad):
 
 ---
 
-## Testee
+## __Testee__ - A test reporter
 
 __Automated cross-browser test reporter for QUnit, Jasmine and Mocha__
+
+<img src="images/testee_logo.png" alt="Testee Logo" style="float: right; margin-top: 4em;" />
+
+Some neat features:
 
 - Runs on all browsers
 - Many output formats
@@ -192,38 +199,37 @@ Test with IE 9.0 on BrowserStack:
 
 ## Configuration File
 
-Run test in CI with the BrowserStack iPad emulator:
+Run test in CI using Browserstack and the Samsung Galaxy Nexus emulator:
 
 	!javascript
-	// testee.json
 	{
-		"browser": {
-			"browser": "ie",
-			"os": "win",
-			"version": "latest"
-		},
-		"launch": {
-			"type": "browserstack",
-			"username": "your username",
-			"password": "your password"
-		},
-		"reporter": "XUnit"
+	  "browser": {
+	    "version": "4.0",
+	    "device": "Samsung Galaxy Nexus",
+	    "os": "android"
+	  },
+	  "launch": {
+	    "type": "browserstack",
+	    "username": "browserstackusername",
+	    "password": "browserstackpassword"
+	  },
+	  "reporter": "Dot"
 	}
 
 And run like:
 
-	testee --config testee.json
+	testee --config testee.json > testresults_galaxy_tab.xml
 
 ---
 
 ## Are We __There Yet__?
 
-- *Browser independent*
-- *All tests written in JavaScript*
+- *Browser independent* <i class="icon-ok"></i>
+- *All tests written in JavaScript* <i class="icon-ok"></i>
 - Unit and functional testing
-- *Test against a single browser in development*
-- *Test against all target browsers in CI*
-- *Runs from the CLI*
+- *Test against a single browser in development* <i class="icon-ok"></i>
+- *Test against all target browsers in CI* <i class="icon-ok"></i>
+- *Runs from the CLI* <i class="icon-ok"></i>
 
 ---
 
@@ -233,64 +239,54 @@ And run like:
 
 ---
 
-## __What__ Does It Do?
+## __What__ Is It?
 
-__Automated tests performed from a user perspective:__
+__Automated tests performed from a user perspective__
 
 - Emulate user input
 - Examine the result
 - Black box testing
-- Ideal for testing component interaction
+
+__Used for__
+
+- Testing component interaction
+- Verifying UI heavy widgets
 - Application smoke tests
 
 ---
 
-## What __if...__
+## __FuncUnit__
 
-<!--
-	jQuery + QUnit -> Evolve
--->
+Functional testing library built on top of __jQuery__ and __QUnit__:
 
-... we could use __jQuery syntax__ and __QUnit tests__ for functional testing?
+- Use jQuery syntax to emulate user input
+- Write QUnit style tests
 
-__Something like:__
+__Testing a [TodoMVC](http://todomvc.com) app__
 
 	!javascript
-	test('Application login works', function() {
-		// Click in username field and type
-		S('[name="username"]').click().type('testing-smiley');
-		// Click in password field and input password
-		S('[name="password"]').click().type('supersecret');
-		// Submit the form
-		S('[type="submit"]').click();
-		// Make sure that our application loaded
-		S('#application').exists();
-		// And our status field shows the username
-		S('#status .info').html('testing-smiley');
+	test('TodoMVC app', function() {
+		S('#new-todo').click().type('Do some nerdy stuff\r').wait(500);
+		S('#todo-list li').size(1, 'Got one Todo');
+		S('#todo-list li:first label')
+			.html('Do some nerdy stuff', 'Todo has correct text');
+		S('#todo-count').html(/<strong>1<\/strong>(.*)item(.*)left/,
+			'Todo count text is correct');
 	});
 
-### Use [FuncUnit]()
+---
+
+## Are We __There Yet__?
+
+- *Browser independent* <i class="icon-ok"></i>
+- *All tests written in JavaScript* <i class="icon-ok"></i>
+- *Unit and functional testing* <i class="icon-ok"></i>
+- *Test against a single browser in development* <i class="icon-ok"></i>
+- *Test against all target browsers in CI* <i class="icon-ok"></i>
+- *Runs from the CLI* <i class="icon-ok"></i>
 
 ---
 
-# Making things testable
+## Keep it on your __Radar__
 
----
-
-## When to do what?
-
-### Unit tests
-
-- Low level
-
-### Functional tests
-
-- Existing UI headvy widgets
-- Integration tests
-
----
-
-## Application structure
-
-__MVC__ doesn't
-
+<i class="icon-signal large"></i>

@@ -72,7 +72,7 @@
             </aside>
             
             <aside class="page_number">
-              1/22
+              1/21
             </aside>
           </footer>
         </div>
@@ -109,7 +109,7 @@
             </aside>
             
             <aside class="page_number">
-              2/22
+              2/21
             </aside>
           </footer>
         </div>
@@ -123,8 +123,8 @@
             <header><h2><strong>Open Source</strong>?</h2></header>
             
             
-            <section><p><img src="images/jqueryplusplus_logo.png" alt="jQuery++ Logo" style="margin-bottom: 1em;" />
-<img src="images/canjs_logo.png" alt="CanJS Logo" /></p></section>
+            <section><p><img src="images/canjs_logo.png" alt="CanJS Logo" />
+<img src="images/jqueryplusplus_logo.png" alt="jQuery++ Logo" style="margin-bottom: 1em;" /></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -140,7 +140,7 @@
             </aside>
             
             <aside class="page_number">
-              3/22
+              3/21
             </aside>
           </footer>
         </div>
@@ -193,7 +193,7 @@
             </aside>
             
             <aside class="page_number">
-              4/22
+              4/21
             </aside>
           </footer>
         </div>
@@ -224,7 +224,7 @@
             </aside>
             
             <aside class="page_number">
-              5/22
+              5/21
             </aside>
           </footer>
         </div>
@@ -240,7 +240,7 @@
             
             <section><p><img src="images/smiley_thinking.png" alt="JavaScript testing smiley is thinking" style="float: right; margin-top: 3em; margin-right: 2em;" /></p>
 <ul>
-<li>Create tools that make things easier<ul>
+<li>Build and use tools that make testing easier<ul>
 <li><a href="http://gruntjs.com/">GruntJS</a></li>
 <li><a href="https://travis-ci.org">TravisCI</a></li>
 </ul>
@@ -250,7 +250,7 @@
 </ul>
 </li>
 <li>Talk about it!</li>
-<li>Automate stuff</li>
+<li>Automate as much as possible</li>
 </ul>
 <!--
     If there is no solution to automate yet, because developers are inherently lazy there are two
@@ -272,7 +272,7 @@
             </aside>
             
             <aside class="page_number">
-              6/22
+              6/21
             </aside>
           </footer>
         </div>
@@ -310,7 +310,7 @@
             </aside>
             
             <aside class="page_number">
-              7/22
+              7/21
             </aside>
           </footer>
         </div>
@@ -340,7 +340,7 @@
             </aside>
             
             <aside class="page_number">
-              8/22
+              8/21
             </aside>
           </footer>
         </div>
@@ -354,12 +354,12 @@
             <header><h2>So <strong>how</strong> do we solve this?</h2></header>
             
             
-            <section><h3>There will always be a holy grail!</h3>
+            <section><h3>There will always be some holy grail!</h3>
+<p><i class="icon-trophy" style="float: right; font-size: 250px; margin-top: 100px;"></i></p>
 <ul>
 <li>Break things down into smaller pieces</li>
-<li>Find the best possible solution</li>
-<li>Evolve</li>
-<li>Repeat</li>
+<li>Try and find the best possible solution</li>
+<li>Build something on top of it</li>
 </ul>
 <!--
     In the bigger picture: Look at how things have evolved in recent time.
@@ -380,7 +380,7 @@
             </aside>
             
             <aside class="page_number">
-              9/22
+              9/21
             </aside>
           </footer>
         </div>
@@ -410,7 +410,7 @@
             </aside>
             
             <aside class="page_number">
-              10/22
+              10/21
             </aside>
           </footer>
         </div>
@@ -421,7 +421,7 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h2>Starting Tests</h2></header>
+            <header><h2><strong>Starting</strong> Tests</h2></header>
             
             
             <section><p><strong>Open the test page URL in the target browser(s)</strong></p>
@@ -449,7 +449,7 @@
             </aside>
             
             <aside class="page_number">
-              11/22
+              11/21
             </aside>
           </footer>
         </div>
@@ -460,10 +460,12 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h2>Testee</h2></header>
+            <header><h2><strong>Testee</strong> - A test reporter</h2></header>
             
             
             <section><p><strong>Automated cross-browser test reporter for QUnit, Jasmine and Mocha</strong></p>
+<p><img src="images/testee_logo.png" alt="Testee Logo" style="float: right; margin-top: 4em;" /></p>
+<p>Some neat features:</p>
 <ul>
 <li>Runs on all browsers</li>
 <li>Many output formats</li>
@@ -487,7 +489,7 @@
             </aside>
             
             <aside class="page_number">
-              12/22
+              12/21
             </aside>
           </footer>
         </div>
@@ -528,7 +530,7 @@
             </aside>
             
             <aside class="page_number">
-              13/22
+              13/21
             </aside>
           </footer>
         </div>
@@ -566,7 +568,7 @@
             </aside>
             
             <aside class="page_number">
-              14/22
+              14/21
             </aside>
           </footer>
         </div>
@@ -580,25 +582,24 @@
             <header><h2>Configuration File</h2></header>
             
             
-            <section><p>Run test in CI with the BrowserStack iPad emulator:</p>
-<div class="highlight"><pre><span class="c1">// testee.json</span>
-<span class="p">{</span>
-    <span class="s2">&quot;browser&quot;</span><span class="o">:</span> <span class="p">{</span>
-        <span class="s2">&quot;browser&quot;</span><span class="o">:</span> <span class="s2">&quot;ie&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;os&quot;</span><span class="o">:</span> <span class="s2">&quot;win&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;latest&quot;</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;launch&quot;</span><span class="o">:</span> <span class="p">{</span>
-        <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;browserstack&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;username&quot;</span><span class="o">:</span> <span class="s2">&quot;your username&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;password&quot;</span><span class="o">:</span> <span class="s2">&quot;your password&quot;</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;reporter&quot;</span><span class="o">:</span> <span class="s2">&quot;XUnit&quot;</span>
+            <section><p>Run test in CI using Browserstack and the Samsung Galaxy Nexus emulator:</p>
+<div class="highlight"><pre><span class="p">{</span>
+  <span class="s2">&quot;browser&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;4.0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;device&quot;</span><span class="o">:</span> <span class="s2">&quot;Samsung Galaxy Nexus&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;os&quot;</span><span class="o">:</span> <span class="s2">&quot;android&quot;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;launch&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;browserstack&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;username&quot;</span><span class="o">:</span> <span class="s2">&quot;browserstackusername&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;password&quot;</span><span class="o">:</span> <span class="s2">&quot;browserstackpassword&quot;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;reporter&quot;</span><span class="o">:</span> <span class="s2">&quot;Dot&quot;</span>
 <span class="p">}</span>
 </pre></div>
 
 <p>And run like:</p>
-<pre><code>testee --config testee.json
+<pre><code>testee --config testee.json &gt; testresults_galaxy_tab.xml
 </code></pre></section>
             
           </div>
@@ -615,7 +616,7 @@
             </aside>
             
             <aside class="page_number">
-              15/22
+              15/21
             </aside>
           </footer>
         </div>
@@ -630,12 +631,12 @@
             
             
             <section><ul>
-<li><em>Browser independent</em></li>
-<li><em>All tests written in JavaScript</em></li>
+<li><em>Browser independent</em> <i class="icon-ok"></i></li>
+<li><em>All tests written in JavaScript</em> <i class="icon-ok"></i></li>
 <li>Unit and functional testing</li>
-<li><em>Test against a single browser in development</em></li>
-<li><em>Test against all target browsers in CI</em></li>
-<li><em>Runs from the CLI</em></li>
+<li><em>Test against a single browser in development</em> <i class="icon-ok"></i></li>
+<li><em>Test against all target browsers in CI</em> <i class="icon-ok"></i></li>
+<li><em>Runs from the CLI</em> <i class="icon-ok"></i></li>
 </ul></section>
             
           </div>
@@ -652,7 +653,7 @@
             </aside>
             
             <aside class="page_number">
-              16/22
+              16/21
             </aside>
           </footer>
         </div>
@@ -682,7 +683,7 @@
             </aside>
             
             <aside class="page_number">
-              17/22
+              17/21
             </aside>
           </footer>
         </div>
@@ -693,15 +694,19 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h2><strong>What</strong> Does It Do?</h2></header>
+            <header><h2><strong>What</strong> Is It?</h2></header>
             
             
-            <section><p><strong>Automated tests performed from a user perspective:</strong></p>
+            <section><p><strong>Automated tests performed from a user perspective</strong></p>
 <ul>
 <li>Emulate user input</li>
 <li>Examine the result</li>
 <li>Black box testing</li>
-<li>Ideal for testing component interaction</li>
+</ul>
+<p><strong>Used for</strong></p>
+<ul>
+<li>Testing component interaction</li>
+<li>Verifying UI heavy widgets</li>
 <li>Application smoke tests</li>
 </ul></section>
             
@@ -719,7 +724,7 @@
             </aside>
             
             <aside class="page_number">
-              18/22
+              18/21
             </aside>
           </footer>
         </div>
@@ -730,30 +735,25 @@
         <div class="slide has_code">
           <div class="inner">
             
-            <header><h2>What <strong>if...</strong></h2></header>
+            <header><h2><strong>FuncUnit</strong></h2></header>
             
             
-            <section><!--
-    jQuery + QUnit -> Evolve
--->
-
-<p>... we could use <strong>jQuery syntax</strong> and <strong>QUnit tests</strong> for functional testing?</p>
-<p><strong>Something like:</strong></p>
-<div class="highlight"><pre><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;Application login works&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// Click in username field and type</span>
-    <span class="nx">S</span><span class="p">(</span><span class="s1">&#39;[name=&quot;username&quot;]&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">().</span><span class="nx">type</span><span class="p">(</span><span class="s1">&#39;testing-smiley&#39;</span><span class="p">);</span>
-    <span class="c1">// Click in password field and input password</span>
-    <span class="nx">S</span><span class="p">(</span><span class="s1">&#39;[name=&quot;password&quot;]&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">().</span><span class="nx">type</span><span class="p">(</span><span class="s1">&#39;supersecret&#39;</span><span class="p">);</span>
-    <span class="c1">// Submit the form</span>
-    <span class="nx">S</span><span class="p">(</span><span class="s1">&#39;[type=&quot;submit&quot;]&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">();</span>
-    <span class="c1">// Make sure that our application loaded</span>
-    <span class="nx">S</span><span class="p">(</span><span class="s1">&#39;#application&#39;</span><span class="p">).</span><span class="nx">exists</span><span class="p">();</span>
-    <span class="c1">// And our status field shows the username</span>
-    <span class="nx">S</span><span class="p">(</span><span class="s1">&#39;#status .info&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;testing-smiley&#39;</span><span class="p">);</span>
+            <section><p>Functional testing library built on top of <strong>jQuery</strong> and <strong>QUnit</strong>:</p>
+<ul>
+<li>Use jQuery syntax to emulate user input</li>
+<li>Write QUnit style tests</li>
+</ul>
+<p><strong>Testing a TodoMVC app</strong></p>
+<div class="highlight"><pre><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;TodoMVC app&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">S</span><span class="p">(</span><span class="s1">&#39;#new-todo&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">().</span><span class="nx">type</span><span class="p">(</span><span class="s1">&#39;Do some nerdy stuff\r&#39;</span><span class="p">).</span><span class="nx">wait</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+    <span class="nx">S</span><span class="p">(</span><span class="s1">&#39;#todo-list li&#39;</span><span class="p">).</span><span class="nx">size</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;Got one Todo&#39;</span><span class="p">);</span>
+    <span class="nx">S</span><span class="p">(</span><span class="s1">&#39;#todo-list li:first label&#39;</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;Do some nerdy stuff&#39;</span><span class="p">,</span> <span class="s1">&#39;Todo has correct text&#39;</span><span class="p">);</span>
+    <span class="nx">S</span><span class="p">(</span><span class="s1">&#39;#todo-count&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="sr">/&lt;strong&gt;1&lt;\/strong&gt;(.*)item(.*)left/</span><span class="p">,</span>
+        <span class="s1">&#39;Todo count text is correct&#39;</span><span class="p">);</span>
 <span class="p">});</span>
 </pre></div>
-
-<h3>Use <a href="">FuncUnit</a></h3></section>
+</section>
             
           </div>
           <div class="presenter_notes">
@@ -769,7 +769,7 @@
             </aside>
             
             <aside class="page_number">
-              19/22
+              19/21
             </aside>
           </footer>
         </div>
@@ -780,45 +780,16 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h1>Making things testable</h1></header>
+            <header><h2>Are We <strong>There Yet</strong>?</h2></header>
             
             
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="readme.md">readme.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              20/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: readme.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>When to do what?</h2></header>
-            
-            
-            <section><h3>Unit tests</h3>
-<ul>
-<li>Low level</li>
-</ul>
-<h3>Functional tests</h3>
-<ul>
-<li>Existing UI headvy widgets</li>
-<li>Integration tests</li>
+            <section><ul>
+<li><em>Browser independent</em> <i class="icon-ok"></i></li>
+<li><em>All tests written in JavaScript</em> <i class="icon-ok"></i></li>
+<li><em>Unit and functional testing</em> <i class="icon-ok"></i></li>
+<li><em>Test against a single browser in development</em> <i class="icon-ok"></i></li>
+<li><em>Test against all target browsers in CI</em> <i class="icon-ok"></i></li>
+<li><em>Runs from the CLI</em> <i class="icon-ok"></i></li>
 </ul></section>
             
           </div>
@@ -835,7 +806,7 @@
             </aside>
             
             <aside class="page_number">
-              21/22
+              20/21
             </aside>
           </footer>
         </div>
@@ -846,10 +817,10 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h2>Application structure</h2></header>
+            <header><h2>Keep it on your <strong>Radar</strong></h2></header>
             
             
-            <section><p><strong>MVC</strong> doesn't</p></section>
+            <section><p><i class="icon-signal large"></i></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -865,7 +836,7 @@
             </aside>
             
             <aside class="page_number">
-              22/22
+              21/21
             </aside>
           </footer>
         </div>
@@ -934,12 +905,12 @@
       
         
         <tr id="toc-row-11" class="sub">
-          <th><a href="#slide11">Starting Tests</a></th>
+          <th><a href="#slide11"><strong>Starting</strong> Tests</a></th>
           <td><a href="#slide11">11</a></td>
         </tr>
         
         <tr id="toc-row-12" class="sub">
-          <th><a href="#slide12">Testee</a></th>
+          <th><a href="#slide12"><strong>Testee</strong> - A test reporter</a></th>
           <td><a href="#slide12">12</a></td>
         </tr>
         
@@ -972,31 +943,23 @@
       
         
         <tr id="toc-row-18" class="sub">
-          <th><a href="#slide18"><strong>What</strong> Does It Do?</a></th>
+          <th><a href="#slide18"><strong>What</strong> Is It?</a></th>
           <td><a href="#slide18">18</a></td>
         </tr>
         
         <tr id="toc-row-19" class="sub">
-          <th><a href="#slide19">What <strong>if...</strong></a></th>
+          <th><a href="#slide19"><strong>FuncUnit</strong></a></th>
           <td><a href="#slide19">19</a></td>
         </tr>
         
-      
-      
-      <tr id="toc-row-20">
-        <th><a href="#slide20">Making things testable</a></th>
-        <td><a href="#slide20">20</a></td>
-      </tr>
-      
-        
-        <tr id="toc-row-21" class="sub">
-          <th><a href="#slide21">When to do what?</a></th>
-          <td><a href="#slide21">21</a></td>
+        <tr id="toc-row-20" class="sub">
+          <th><a href="#slide20">Are We <strong>There Yet</strong>?</a></th>
+          <td><a href="#slide20">20</a></td>
         </tr>
         
-        <tr id="toc-row-22" class="sub">
-          <th><a href="#slide22">Application structure</a></th>
-          <td><a href="#slide22">22</a></td>
+        <tr id="toc-row-21" class="sub">
+          <th><a href="#slide21">Keep it on your <strong>Radar</strong></a></th>
+          <td><a href="#slide21">21</a></td>
         </tr>
         
       

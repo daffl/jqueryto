@@ -848,9 +848,9 @@ div.slide p.notes {
 	display: none;
 }
 
-.highlight, pre {
-	padding-left: 2em;
-	padding-right: 2em;
+pre {
+	margin: 0 2em;
+	padding: 1em;
 }
 
 h3 {

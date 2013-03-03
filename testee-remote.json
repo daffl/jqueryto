@@ -1,0 +1,12 @@
+{
+	"tunnel": {
+		"type": "local",
+		"hostname": "192.168.43.108"
+	},
+	"launch": {
+		"type": "remotePreview"
+	},
+	"browser": {
+		"file": "remote-preview/url.txt"
+	}
+}

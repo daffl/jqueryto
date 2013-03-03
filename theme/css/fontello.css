@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'fontello';
-  src: url("../font/fontello.eot?98399539");
-  src: url("../font/fontello.eot?98399539#iefix") format('embedded-opentype'), url("../font/fontello.woff?98399539") format('woff'), url("../font/fontello.ttf?98399539") format('truetype'), url("../font/fontello.svg?98399539#fontello") format('svg');
+  src: url("../font/fontello.eot?41866872");
+  src: url("../font/fontello.eot?41866872#iefix") format('embedded-opentype'), url("../font/fontello.woff?41866872") format('woff'), url("../font/fontello.ttf?41866872") format('truetype'), url("../font/fontello.svg?41866872#fontello") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,7 +13,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?98399539#fontello') format('svg');
+    src: url('../font/fontello.svg?41866872#fontello') format('svg');
   }
 }
 */
@@ -40,9 +40,13 @@
 /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
+.icon-podcast:before { content: '\60'; } /* '`' */
 .icon-home:before { content: '\2302'; } /* '⌂' */
 .icon-cog-alt:before { content: '\26ef'; } /* '⛯' */
+.icon-ok:before { content: '\e070'; } /* '' */
+.icon-group:before { content: '\e091'; } /* '' */
 .icon-edit-alt:before { content: '\e0ed'; } /* '' */
+.icon-signal:before { content: '\e770'; } /* '' */
 .icon-emo-happy:before { content: '\e800'; } /* '' */
 .icon-emo-wink:before { content: '\e801'; } /* '' */
 .icon-emo-unhappy:before { content: '\e802'; } /* '' */
@@ -57,13 +61,11 @@
 .icon-emo-squint:before { content: '\e811'; } /* '' */
 .icon-emo-laugh:before { content: '\e812'; } /* '' */
 .icon-emo-wink2:before { content: '\e813'; } /* '' */
-.icon-firefox:before { content: '\e840'; } /* '' */
-.icon-chrome:before { content: '\e841'; } /* '' */
-.icon-opera:before { content: '\e842'; } /* '' */
-.icon-ie:before { content: '\e843'; } /* '' */
+.icon-trophy:before { content: '\f074'; } /* '' */
 .icon-twitter:before { content: '\f302'; } /* '' */
 .icon-twitter-bird:before { content: '\f303'; } /* '' */
 .icon-github:before { content: '\f308'; } /* '' */
 .icon-tumblr-rect:before { content: '\f310'; } /* '' */
 .icon-tumblr:before { content: '\f311'; } /* '' */
 .icon-picture:before { content: '🌄'; } /* '\1f304' */
+.icon-award:before { content: '🏉'; } /* '\1f3c9' */
