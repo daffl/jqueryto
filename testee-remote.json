@@ -1,11 +1,9 @@
 {
 	"tunnel": {
 		"type": "local",
-		"hostname": "192.168.43.108"
+		"hostname": "airblubber"
 	},
-	"launch": {
-		"type": "remotePreview"
-	},
+	"launch": "remotePreview",
 	"browser": {
 		"file": "remote-preview/url.txt"
 	}

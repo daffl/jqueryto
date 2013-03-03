@@ -1,4 +1,4 @@
-# JavaScript? __Testing?__
+# if( __js__ && __testing__ ) { __level__++; }
 
 <img src="images/smiley_confused.png" alt="JavaScript? Testing?" />
 
@@ -15,7 +15,7 @@
 [github.com/daffl](https://github.com/daffl)
 
 <i class="icon-picture large"></i>
-[http://daffl.github.com/jqueryto](http://daffl.github.com/jqueryto)
+[https://github.com/daffl/jqueryto](http://github.com/daffl/jqueryto)
 
 ![Bitovi Logo](images/bitovi_logo_black.png)
 
@@ -23,8 +23,8 @@
 
 ## __Open Source__?
 
-<img src="images/canjs_logo.png" alt="CanJS Logo" />
-<img src="images/jqueryplusplus_logo.png" alt="jQuery++ Logo" style="margin-bottom: 1em;" />
+<a href="http://canjs.us"><img src="images/canjs_logo.png" alt="CanJS Logo" /></a><br />
+<a href="http://jquerypp.com"><img src="images/jqueryplusplus_logo.png" alt="jQuery++ Logo" /></a>
 
 ---
 
@@ -50,11 +50,6 @@
 	</a>
 </div>
 
-<!--
-	More important as applications get bigger
-	JavaScript testing smiley is not happy (yet)
-	We as a community should work on making this easier
--->
 ---
 
 ## But __...__
@@ -65,29 +60,63 @@
 
 ---
 
+## Getting started __is easy__
+
+Set up a page:
+
+	!html
+	<!DOCTYPE html>
+	<html>
+	<head>
+	  <meta charset="utf-8">
+	  <title>My QUnit Test</title>
+	  <link rel="stylesheet" href="/resources/qunit.css">
+	</head>
+	<body>
+	  <div id="qunit"></div>
+	  <div id="qunit-fixture"></div>
+	  <script src="/resources/qunit.js"></script>
+	  <script src="/resources/underscore.js"></script>
+	  <script src="tests.js"></script>
+	</body>
+	</html>
+
+---
+
+## Your Own __Underscore Test__
+
+And in __tests.js__:
+
+	!javascript
+	module("My Underscore Test");
+
+	test("values", function() {
+    	equal(_.values({one: 1, two: 2}).join(', '), '1, 2',
+    		'can extract the values from an object');
+		equal(_.values({one: 1, two: 2, length: 3}).join(', '),
+			'1, 2, 3', '... even when one of them is "length"');
+	});
+
+---
+
 ## Can We Do __Better__?
 
 <img src="images/smiley_thinking.png" alt="JavaScript testing smiley is thinking" style="float: right; margin-top: 3em; margin-right: 2em;" />
 
 - Build and use tools that make testing easier
 	- [GruntJS](http://gruntjs.com/)
-	- [TravisCI](https://travis-ci.org)
+	- [TravisCI](https://travis-ci.org) [![Build Status](https://travis-ci.org/bitovi/canjs.png?branch=master)](https://travis-ci.org/bitovi/canjs)
+	- [BrowserStack](http://www.browserstack.com/)
 - Simplify workflows
 	- [Yeoman](http://yeoman.io/)
 - Talk about it!
 - Automate as much as possible
 
-<!--
-	If there is no solution to automate yet, because developers are inherently lazy there are two
-	options: Still do it manually or develop a solution.
-	Ideally we want to make testing as easy as what jQuery did with cross-browser DOM manipulation
--->
-
 ---
 
 ## A __Holy Grail__?
 
-[Adam Hawkins]() at [RejectJS 2012](https://speakerdeck.com/twinturbo/javascript-testing-the-holy-grail) ([watch](http://www.youtube.com/watch?v=YdFQ29oK50M))
+[Adam Hawkins](https://github.com/twinturbo) at [RejectJS 2012](https://speakerdeck.com/twinturbo/javascript-testing-the-holy-grail) ([watch](http://www.youtube.com/watch?v=YdFQ29oK50M))
 
 - Browser independent
 - All tests written in JavaScript
@@ -101,25 +130,6 @@
 ## Not __Again__!
 
 <div style="margin-top: 1em;"><img src="images/monty_python.jpg" id="holygrail" alt="The Holy Grail!" /></div>
-
----
-
-## So __how__ do we solve this?
-
-### There will always be some holy grail!
-
-<i class="icon-trophy" style="float: right; font-size: 250px; margin-top: 100px;"></i>
-
-- Break things down into smaller pieces
-- Try and find the best possible solution
-- Build something on top of it
-
-<smal>Also: There is no holy grail</small>
-
-<!--
-	In the bigger picture: Look at how things have evolved in recent time.
-	jQuery -> Structuring (MVC) -> Live-binding MVC
--->
 
 ---
 
@@ -144,7 +154,7 @@ Automate with [Launchpad](https://github.com/ekryski/launchpad):
 
 ---
 
-## __Testee__ - A test reporter
+## [Testee](daffl.github.com/testee.js) - A __test reporter__
 
 __Automated cross-browser test reporter for QUnit, Jasmine and Mocha__
 
@@ -199,26 +209,23 @@ Test with IE 9.0 on BrowserStack:
 
 ## Configuration File
 
-Run test in CI using Browserstack and the Samsung Galaxy Nexus emulator:
+Set up [Remote Preview](https://github.com/viljamis/Remote-Preview) to open tests on other devices:
 
 	!javascript
 	{
-	  "browser": {
-	    "version": "4.0",
-	    "device": "Samsung Galaxy Nexus",
-	    "os": "android"
-	  },
-	  "launch": {
-	    "type": "browserstack",
-	    "username": "browserstackusername",
-	    "password": "browserstackpassword"
-	  },
-	  "reporter": "Dot"
+		"tunnel": {
+			"type": "local",
+			"hostname": "airblubber"
+		},
+		"launch": "remotePreview",
+		"browser": {
+			"file": "remote-preview/url.txt"
+		}
 	}
 
 And run like:
 
-	testee --config testee.json > testresults_galaxy_tab.xml
+	testee --config testee.json
 
 ---
 
