@@ -1,9 +1,9 @@
 [submodule "underscore"]
 	path = underscore
-	url = git@github.com:documentcloud/underscore.git
+	url = git://github.com/documentcloud/underscore.git
 [submodule "remote-preview"]
 	path = remote-preview
-	url = git@github.com:viljamis/Remote-Preview.git
+	url = git://github.com/viljamis/Remote-Preview.git
 [submodule "todomvc"]
 	path = todomvc
-	url = git@github.com:bitovi/todomvc.git
+	url = git://github.com/bitovi/todomvc.git
