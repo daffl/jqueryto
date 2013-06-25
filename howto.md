@@ -3,7 +3,9 @@
 ## Installation
 
 > git clone git@github.com:daffl/jqueryto.git
+
 > cd jqueryto
+
 > git submodule update --init --recursive
 
 ## Simple demos
@@ -19,6 +21,7 @@ On Firefox:
 With different outputs:
 
 > testee underscore/test/index.html --browser firefox --reporter Dot
+
 > testee underscore/test/index.html --browser firefox --reporter XUnit > testresults.xml
 
 With code coverage:
@@ -55,6 +58,7 @@ Run [remote-preview](http://viljamis.com/blog/2012/remote-preview/) (the video f
 what it can do) install and start a local HTTP server:
 
 > sudo npm install http-server -g
+
 > http-server
 
 On the mobile device go to `http://<your-host>:8080/remote-preview`.
