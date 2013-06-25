@@ -1,7 +1,7 @@
 {
 	"tunnel": {
 		"type": "local",
-		"hostname": "airblubber"
+		"hostname": "192.168.1.64"
 	},
 	"launch": "remotePreview",
 	"browser": {

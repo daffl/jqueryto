@@ -197,9 +197,9 @@ Output XML test results for CI:
 
 	testee test/index.html --browser safari --reporter XUnit > testresults.xml
 
-Run remote tests on Chrome Canary and output code coverage statistics:
+Run tests on Chrome Canary and output code coverage statistics:
 
-	testee http://underscorejs.org/test/index.html --browser canary --coverage
+	testee test/index.html --browser canary --coverage
 
 Test with IE 9.0 on BrowserStack:
 
